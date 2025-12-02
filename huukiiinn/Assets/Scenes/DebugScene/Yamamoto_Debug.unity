@@ -165,7 +165,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172618468}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be732badfe6348b4a86c0df30dcc30e6, type: 3}
   m_Name: 
@@ -314,8 +314,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 172618470}
-        m_TargetAssemblyTypeName: NextButton, Assembly-CSharp
+      - m_Target: {fileID: 1945290332}
+        m_TargetAssemblyTypeName: SimpleObjectManagerSO, Assembly-CSharp
         m_MethodName: ShowNext
         m_Mode: 1
         m_Arguments:
@@ -702,6 +702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1945290331}
   - component: {fileID: 1945290330}
+  - component: {fileID: 1945290332}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -716,7 +717,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945290329}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0f2414608704874e8d3f5524481b823, type: 3}
   m_Name: 
@@ -740,6 +741,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1945290332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945290329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1314271e9df14c42960849d1b0ec24e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleObjectManagerSO
+  database: {fileID: 11400000, guid: c3b5405be14485a4f81f9eed2e0eb434, type: 2}
+  parent: {fileID: 1945290331}
 --- !u!1 &2115891052
 GameObject:
   m_ObjectHideFlags: 0
