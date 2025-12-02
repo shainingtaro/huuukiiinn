@@ -9,7 +9,7 @@ public class option : MonoBehaviour
 
     // メインメニューのシーン名を設定（OptionsSceneから戻るため）
     [SerializeField]
-    private string mainSceneName = "TitleScene";
+    private string titleSceneName = "title";
 
     /// <summary>
     /// オプション画面へ遷移するメソッド
@@ -26,6 +26,6 @@ public class option : MonoBehaviour
     public void LoadMainScene()
     {
         // SceneManager.LoadScene()でメインメニュー画面へ戻る
-        SceneManager.LoadScene(mainSceneName);
+        SceneManager.LoadScene(titleSceneName);
     }
 }
