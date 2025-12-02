@@ -10,6 +10,7 @@ public class SceneLoader : MonoBehaviour
     // ボタンのOnClickイベントから呼び出すためのパブリックメソッド
     public void LoadNextScene()
     {
+        Debug.Log("次のシーン");
         // SceneManager.LoadScene()で指定した名前のシーンへ遷移
         SceneManager.LoadScene(nextSceneName);
     }
