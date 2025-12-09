@@ -4,7 +4,7 @@ using UnityEngine;
 public class SimpleObjectManagerSO : MonoBehaviour
 {
     [Header("データベース (ScriptableObject)")]
-    public DeskManagement database;
+    public DeskManageObject database;
 
     [Header("生成したオブジェクトの親")]
     public Transform parent; // 机の上の位置 (空オブジェクト) を指定
